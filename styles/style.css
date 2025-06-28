@@ -53,6 +53,7 @@
     z-index: 2;
 }
 /* About Highlighted Description Styles */
+.about-highlight-text {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.7;
@@ -84,9 +85,9 @@
     font-weight: 800;
     background: linear-gradient(90deg, #6a82fb, #fc5c7d, #43e97b 80%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     background-clip: text;
-    text-fill-color: transparent;
+    /* removed invalid property */
     font-size: 1.18em;
     letter-spacing: 0.04em;
     animation: aboutGradientMove 4s linear infinite;
@@ -121,7 +122,7 @@
     font-weight: 900;
     background: linear-gradient(90deg, #6a82fb, #fc5c7d, #43e97b 80%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     background-clip: text;
     letter-spacing: 0.09em;
     margin-bottom: 0.5rem;
@@ -214,7 +215,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
     letter-spacing: 0.08em;
     margin-bottom: 0.5rem;
     display: flex;
@@ -312,9 +313,9 @@
     font-weight: 800;
     background: linear-gradient(90deg, #6a82fb, #fc5c7d, #43e97b 80%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-text-fill-color: transparent; */
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
     margin-bottom: 0.5rem;
     letter-spacing: 0.08em;
 }
@@ -689,7 +690,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  /* removed invalid property */
   text-shadow: 0 4px 24px #f59e4244, 0 1px 0 #2563eb;
   filter: drop-shadow(0 2px 12px #f59e42cc);
   animation: expLetterGlow 2.5s infinite alternate;
@@ -1423,8 +1424,8 @@ html, body {
   letter-spacing: 2px;
   color: #0a1a44;
   background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
+  /* removed invalid property */
+  /* removed invalid property */
   margin-bottom: 0.2em;
   text-align: left;
   position: relative;
