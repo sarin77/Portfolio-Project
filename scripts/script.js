@@ -39,3 +39,18 @@ function showAwards(id) {
         }
     })
 }
+
+// Slide-in effect for skills blockquote in about section
+window.addEventListener('DOMContentLoaded', function() {
+  const aboutDesc = document.querySelector('.about-description');
+  if (!aboutDesc) return;
+  function onScroll() {
+    const rect = aboutDesc.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      aboutDesc.classList.add('blockquote-visible');
+      window.removeEventListener('scroll', onScroll);
+    }
+  }
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+});
