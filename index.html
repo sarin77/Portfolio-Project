@@ -14,13 +14,8 @@
 <body>
     <!-- NAVBAR -->
     <nav class="nav">
-        <!-- NAV CONTENTS -->
         <section class="nav-contents">
-            <!-- NAV TITLE -->
-            <div class="nav-title" onclick="location.reload()">
-                SARIN
-            </div>
-            <!-- NAV ITEMS -->
+            <div class="nav-title" onclick="location.reload()">SARIN</div>
             <div class="nav-items" id="nav-items">
                 <a href="#about">ABOUT</a>
                 <a href="#experience">EXPERIENCE</a>
@@ -28,7 +23,6 @@
                 <a href="#awards">AWARDS & CERTIFICATIONS</a>
                 <a href="#contact">CONTACT</a>
             </div>
-            <!-- HAMBURGER ICON -->
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -39,165 +33,147 @@
 
     <!-- ABOUT -->
     <section id="about">
-        <!-- ABOUT CONTENTS -->
         <section class="about-contents">
-            <!-- TEXTUAL DETAILS -->
+            <div class="about-photo-wrapper">
+                <div class="about-photo-frame">
+                    <img src="assets/images/sarin.jpg" class="about-photo styled-photo" alt="Sarin Dangol">
+                </div>
+            </div>
             <article class="about-description">
                 <h1>Sarin Dangol</h1>
-                <h3>BCA | WEB | UI/UX</h3>
-                <p>
-                    A creative web developer dedicated to crafting seamless, intuitive digital experiences that put users first. Always exploring new technologies to make the web more accessible, engaging, and efficient.
-                <blockquote><strong>Skills:</strong> HTML, CSS, JS, Figma, UI/UX, Responsive Design, Web Frameworks,
-                    Collaboration.</blockquote>
+                <h3 class="about-title-gradient">BCA <span class="about-title-sep">|</span> <span class="about-title-web">WEB</span> <span class="about-title-sep">|</span> <span class="about-title-uiux">UI/UX</span></h3>
+                <p class="about-highlight-text">
+                    <span class="about-highlight-emoji">🚀</span>
+                    <span class="about-highlight-gradient">A creative web developer</span>
+                    <span class="about-highlight-rest"> dedicated to crafting <span class="about-highlight-keyword">seamless</span>, <span class="about-highlight-keyword">intuitive</span> digital experiences that put users first.<br>
+                    <span class="about-highlight-emoji">✨</span> Always exploring new technologies to make the web more <span class="about-highlight-keyword">accessible</span>, <span class="about-highlight-keyword">engaging</span>, and <span class="about-highlight-keyword">efficient</span>.</span>
                 </p>
-                <!-- Resume Button -->
+                <blockquote class="about-skills-block">
+                    <span class="about-skills-title">Skills:</span>
+                    <span class="about-skill about-skill-html">HTML</span>
+                    <span class="about-skill about-skill-css">CSS</span>
+                    <span class="about-skill about-skill-js">JS</span>
+                    <span class="about-skill about-skill-figma">Figma</span>
+                    <span class="about-skill about-skill-uiux">UI/UX</span>
+                    <span class="about-skill about-skill-responsive">Responsive Design</span>
+                    <span class="about-skill about-skill-frameworks">Web Frameworks</span>
+                    <span class="about-skill about-skill-collab">Collaboration</span>
+                </blockquote>
+                </p>
                 <a href="https://www.figma.com/proto/dHsOaOoPdqde9KB6i2LxFW/Sarin-Resume?node-id=1-17&t=kqDjFzPCnYrOI1p1-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="resume-button" target="_blank">Download Resume</a>
             </article>
-            <!-- IMAGE -->
-            <div>
-                <img src="assets/images/sarin.jpg" class="about-photo" alt="Sarin Dangol">
-            </div>
         </section>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- EXPERIENCE (Redesigned) -->
     <section id="experience">
-        <!-- EXPERIENCE CONTENTS -->
-        <section class="experience-contents">
-            <section id="contents-left">
-                <h2 class="contents-title">EXPERIENCE</h2>
-                <section class="experience-items">
-                    <!-- EXPEIRENCE #1 -->
-                    <div id="exp-2" onclick="showExp('exp-1-content')">
-                        <h3>Hackathon HSMSS</h3>
-                        <p>Second Runner-up | 2024</p>
-                    </div>
-
-                    <div id="exp-2" onclick="showExp('exp-1-content')">
-                        <h3>AR GRAHICS</h3>
-                        <p>GRAHICS DESIGN | 2024</p>
-                    </div>
-                    
-                    <!-- ADDITIONAL EXPERIENCES THAT WILL BE DISPLAYED WHILE SCROLLING VERTICALLY. -->
-                    <div id="exp-4" onclick="showExp('exp-4-content')">
-                        <h3>SoloLearn</h3>
-                        <p>Introduction to SQL | 2024</p>
-                    </div>
-                    
-                </section>
-            </section>
-            <section id="exp-contents-right">
-                <!-- RESPECTIVE CONTENT OF EXPERIENCE #1 -->
-                <div id="exp-1-content">
-                    <h2>i-Tech</h2>
-                    <i>microsoft powerpoint, microsoft excel, graphics Design</i>
-                    <hr />
-                    <p>
-                        A diploma in Microsoft PowerPoint, Excel, and graphic design equips learners with essential office productivity skills, data analysis expertise, and creative design capabilities for professional and business applications
-                    </p>
+        <div class="exp-section-header exp-section-header-center">
+            <span class="exp-section-letter">E</span>
+            <h2 class="contents-title">EXPERIENCE</h2>
+        </div>
+        <div class="exp-cards-wrapper">
+            <div class="exp-card">
+                <div class="exp-icon exp-hackathon"></div>
+                <div class="exp-card-content">
+                    <h3>Hackathon HSMSS</h3>
+                    <span class="exp-role">Second Runner-up | 2024</span>
+                    <p>Developed an interactive solution for a smart college problem with team.</p>
                 </div>
-                <!-- RESPECTIVE CONTENT OF EXPERIENCE #2 -->
-                <div id="exp-2-content" style="display: none;">
-                    <h2>Hackathon HSMSS</h2>
-                    <i>First Runner-up | 2024</i>
-                    <hr />
-                    <p>
-                        Developed an interactive solution for a smart college problem with team.
-                        <a href="#">Project</a>
-                    </p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-icon exp-graphics"></div>
+                <div class="exp-card-content">
+                    <h3>AR GRAPHICS</h3>
+                    <span class="exp-role">Graphics Design | 2024</span>
+                    <p>Created digital assets and branding for AR projects, focusing on modern, engaging visuals.</p>
                 </div>
-                <!-- RESPECTIVE CONTENT OF EXPERIENCE #3 -->
-                <div id="exp-3-content" style="display: none;">
-                    <h2>Sports Club of HSMSS</h2>
-                    <i> 2023 - running</i>
-                    <hr />
-                    <p>
-                        Served as a graphics designer to create vibrant presence in social media.
-                    </p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-icon exp-sololearn"></div>
+                <div class="exp-card-content">
+                    <h3>SoloLearn</h3>
+                    <span class="exp-role">Introduction to SQL | 2024</span>
+                    <p>Completed SQL fundamentals course, building a strong foundation in database management.</p>
                 </div>
-                <!-- RESPECTIVE CONTENT OF EXPERIENCE #4 -->
-                <div id="exp-4-content" style="display: none;">
-                    <h2>microsoft powerpoint</h2>
-                    <i>6 month traning | 2023</i>
-                    <hr />
-                    <p>
-                        done cource in i-teach institute hetauda
-                    </p>
+            </div>
+            <div class="exp-card">
+                <div class="exp-icon exp-sports"></div>
+                <div class="exp-card-content">
+                    <h3>Sports Club of HSMSS</h3>
+                    <span class="exp-role">Graphics Designer | 2023 - running</span>
+                    <p>Served as a graphics designer to create a vibrant presence in social media.</p>
                 </div>
-            </section>
-        </section>
+            </div>
+        </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
-        <!-- PROJECTS CONTENTS. -->
         <section class="projects-contents">
-            <h2 class="contents-title">PROJECTS</h2>
-            <section class="project-items">
-                <!-- PROJECT #1:  -->
-                <div id="project-1">
-                    <h2>Skill Development</h2>
-                    <p>
-                        Working on mini projects hones various skills, including programming, problem-solving, project management, and teamwork, which are invaluable in the IT industry.
-                    </p>
+            <div class="projects-header">
+                <span class="projects-section-letter">P</span>
+                <h2 class="contents-title projects-title-effect">PROJECTS</h2>
+            </div>
+            <div class="project-grid-wrapper">
+                <div class="project-tile">
+                    <div class="project-tile-bg project-skill-bg"></div>
+                    <div class="project-tile-content">
+                        <span class="project-tile-icon">💪</span>
+                        <h3>Skill Development</h3>
+                        <p>Working on mini projects hones various skills, including programming, problem-solving, project management, and teamwork, which are invaluable in the IT industry.</p>
+                    </div>
                 </div>
-                <!-- PROJECT #2:  -->
-                <div id="project-2">
-                    <h2> Online Quiz Game</h2>
-                    <p>
-                        Online Quiz Game is one of the simple mini project ideas for IT students. Developing an online quiz game allows users to test their knowledge and compete with others. Features like categories, questions, and a leaderboard create a competitive and engaging experience.
+                <div class="project-tile">
+                    <div class="project-tile-bg project-quiz-bg"></div>
+                    <div class="project-tile-content">
+                        <span class="project-tile-icon">🎲</span>
+                        <h3>Online Quiz Game</h3>
+                        <p>Developing an online quiz game allows users to test their knowledge and compete with others. Features like categories, questions, and a leaderboard create a competitive and engaging experience.</p>
+                    </div>
                 </div>
-                <!-- PROJECT #3:  -->
-                <div id="project-3">
-                    <h2>Building a Portfolio</h2>
-                    <p>
-                        A collection of well-executed mini-projects can serve as a strong portfolio when seeking physical as well as online internships or job opportunities. It demonstrates your practical abilities to potential employers.
-                    </p>
+                <div class="project-tile">
+                    <div class="project-tile-bg project-portfolio-bg"></div>
+                    <div class="project-tile-content">
+                        <span class="project-tile-icon">📈</span>
+                        <h3>Building a Portfolio</h3>
+                        <p>A collection of well-executed mini-projects can serve as a strong portfolio when seeking internships or job opportunities. It demonstrates your practical abilities to potential employers.</p>
+                    </div>
                 </div>
-            </section>
+            </div>
         </section>
     </section>
 
     <!-- AWARDS & CERTIFICATIONS -->
     <section id="awards">
-        <!-- AWARDS CONTENTS -->
-        <section class="awards-contents">
-            <section id="contents-left">
-                <h2 class="contents-title">AWARDS & CERTIFICATIONS</h2>
-                <section class="awards-items">
-                    <!-- AWARDS #1 (SET IN DECENDING ORDER) -->
-                    <div id="awards-1" class="active" onclick="showAwards('awards-1-content')">
+        <section class="awards-contents-new">
+            <div class="awards-header">
+                <span class="awards-section-letter">A</span>
+                <h2 class="contents-title awards-title-effect">AWARDS & CERTIFICATIONS</h2>
+            </div>
+            <div class="awards-grid-wrapper">
+                <div class="award-card">
+                    <div class="award-icon award-sql">🏅</div>
+                    <div class="award-card-content">
                         <h3>MY SQL</h3>
-                        <p>sololearn 2024</p>
+                        <span class="award-meta">Sololearn | 2024</span>
+                        <p>Completed SQL course and earned certification for database fundamentals.</p>
                     </div>
-                    <div id="awards-1" class="active" onclick="showAwards('awards-1-content')">
-                        <h3>HSMSS PUBG-M</h3>
-                        <p>First runner up / 2024</p>
-                    </div>
-                    
-                </section>
-            </section>
-            <section id="awards-contents-right">
-                <!-- RESPECTIVE CONTENT OF AWARDS #1 -->
-                <div id="awards-1-content">
-                    <h2>PUBG-M CHAMPIONSHIP</h2>
-                    <i>HSMSS 2024</i>
-                    <hr />
-                    <p>
-                        First runner-up in the gaming competation (PUBG-M) at HSMSS FEST 2024/2025
-                        <a href="#">Certificate</a>
-                    </p>
                 </div>
-                
-            </section>
+                <div class="award-card">
+                    <div class="award-icon award-pubg">🥈</div>
+                    <div class="award-card-content">
+                        <h3>HSMSS PUBG-M</h3>
+                        <span class="award-meta">First runner up / 2024</span>
+                        <p>First runner-up in the gaming competition (PUBG-M) at HSMSS FEST 2024/2025. <a href="#">Certificate</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
     </section>
 
     <!-- FOOTER/CONTACT -->
     <footer id="contact">
-        <!-- FOOTER/CONTACT CONTENTS -->
         <section class="contact-contents">
-            <!-- FOOTER/CONTACT LINKS -->
             <div class="contact-links">
                 <h3>LINKS</h3>
                 <a href="#about">About</a>
@@ -206,20 +182,31 @@
                 <a href="#awards">Awards & Certifications</a>
                 <a href="#contact">Contact</a>
             </div>
-            <!-- FOOTER/CONTACT CONNECT -->
             <div class="contact-connect">
                 <h3>CONNECT</h3>
                 <a href="https://github.com/sarin77">Github</a>
                 <a href="https://www.linkedin.com/in/sarin-dangol-931904333/?originalSubdomain=np">LinkedIn</a>
             </div>
-            <!-- FOOTER/CONTACT CONTACT -->
             <div>
                 <h3>CONTACT</h3>
                 <a href="sarindangol5@gmail.com">Email Me</a>
             </div>
         </section>
+        <section class="resume-section-footer">
+            <div class="resume-card-footer modern-resume-card">
+                <div class="resume-card-bg"></div>
+                <div class="resume-card-content">
+                    <div class="resume-icon-animated">📄</div>
+                    <h2 class="resume-title-gradient">RESUME</h2>
+                    <p class="resume-desc">Explore my interactive resume or download the PDF version below.</p>
+                    <div class="resume-actions">
+                        <a href="https://www.figma.com/proto/dHsOaOoPdqde9KB6i2LxFW/Sarin-Resume?node-id=1-17" class="resume-view-btn" target="_blank">View Interactive</a>
+                        <a href="https://www.figma.com/proto/dHsOaOoPdqde9KB6i2LxFW/Sarin-Resume?node-id=1-17&t=kqDjFzPCnYrOI1p1-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="resume-download-btn" target="_blank">Download PDF</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
-
     <!-- IMPORTING CUSTOM SCRIPT. -->
     <script src="scripts/script.js"></script>
 </body>
