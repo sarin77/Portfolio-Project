@@ -1,10 +1,30 @@
-// HAMBURGER OPERATOR.
+
+// HAMBURGER MENU: Improved for mobile/desktop
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-items');
 
-hamburger.addEventListener('click', () => {
+function closeNavOnLinkClick() {
+  // Close nav on mobile when a link is clicked
+  if (window.innerWidth <= 900 && navLinks.classList.contains('active')) {
+    navLinks.classList.remove('active');
+  }
+}
+
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
-});
+  });
+  // Close nav when a nav link is clicked (mobile UX)
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeNavOnLinkClick);
+  });
+  // Responsive: Remove mobile nav state on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900) {
+      navLinks.classList.remove('active');
+    }
+  });
+}
 
 
 // EXPERIENCES TAB MANAGER.
