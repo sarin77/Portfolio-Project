@@ -1,3 +1,132 @@
+/* Responsive Design for App/Mobile View */
+@media (max-width: 900px) {
+  .nav-contents {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2em;
+  }
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(31,41,55,0.10);
+    z-index: 100;
+    padding: 1.5em 0;
+    gap: 1.2em;
+    text-align: center;
+  }
+  .nav-items.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 101;
+  }
+  .hamburger span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 4px 0;
+    background: #6a82fb;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  /* About Section */
+  .about-contents {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    padding: 0 0.5em;
+  }
+  .about-photo-wrapper {
+    margin: 0 auto 1em auto;
+    width: 160px;
+    height: 160px;
+  }
+  .about-photo {
+    width: 140px;
+    height: 140px;
+  }
+  .about-description h1 {
+    font-size: 1.5em;
+  }
+  .about-title-gradient {
+    font-size: 1.1em;
+  }
+  .about-highlight-text {
+    font-size: 0.98em;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+  }
+  .about-skills-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    font-size: 0.98em;
+    padding: 0.7em 0.7em 0.7em 0.7em;
+  }
+  .resume-section-footer {
+    margin-top: 1.2em;
+    padding: 0 0.5em;
+  }
+  .modern-resume-card {
+    min-height: 180px;
+    max-width: 98vw;
+    padding: 1.2em 0.5em;
+  }
+  /* Experience, Projects, Awards */
+  .exp-cards-wrapper, .project-grid-wrapper, .awards-grid-wrapper {
+    flex-direction: column !important;
+    gap: 1.2em !important;
+    align-items: stretch !important;
+  }
+  .exp-card, .project-tile, .award-card {
+    min-width: 0;
+    width: 100%;
+    max-width: 98vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .exp-section-header, .projects-header, .awards-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7em;
+    padding: 0 0.5em;
+  }
+  .exp-section-letter, .projects-section-letter, .awards-section-letter {
+    font-size: 2.2em !important;
+  }
+  .contents-title {
+    font-size: 1.2em !important;
+  }
+  /* Footer */
+  #contact .contact-contents {
+    flex-direction: column;
+    gap: 1.2em;
+    padding: 0 0.5em;
+  }
+  .contact-links, .contact-connect {
+    align-items: flex-start;
+    font-size: 1em;
+  }
+  footer {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+  section {
+    padding: 24px 6px;
+  }
+}
 /* About Skills Block Styles */
 .about-skills-block {
     background: rgba(106,130,251,0.07);
